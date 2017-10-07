@@ -1,0 +1,158 @@
+{
+  "contract_name": "MetaCoin",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "guest",
+          "type": "address"
+        },
+        {
+          "name": "hotel",
+          "type": "address"
+        },
+        {
+          "name": "bank",
+          "type": "address"
+        },
+        {
+          "name": "pointAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "bookByPoint",
+      "outputs": [
+        {
+          "name": "sufficient",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "bank",
+          "type": "address"
+        },
+        {
+          "name": "amount",
+          "type": "uint256"
+        }
+      ],
+      "name": "initBankPoints",
+      "outputs": [
+        {
+          "name": "sufficient",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "initClient",
+      "outputs": [
+        {
+          "name": "sufficient",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "guest",
+          "type": "address"
+        },
+        {
+          "name": "hotel",
+          "type": "address"
+        },
+        {
+          "name": "bank",
+          "type": "address"
+        },
+        {
+          "name": "cashAmount",
+          "type": "uint256"
+        }
+      ],
+      "name": "bookByCash",
+      "outputs": [
+        {
+          "name": "sufficient",
+          "type": "bool"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "addr",
+          "type": "address"
+        }
+      ],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        },
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": true,
+          "name": "_from",
+          "type": "address"
+        },
+        {
+          "indexed": true,
+          "name": "_to",
+          "type": "address"
+        },
+        {
+          "indexed": false,
+          "name": "_value",
+          "type": "uint256"
+        }
+      ],
+      "name": "Transfer",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x6060604052341561000f57600080fd5b5b60408051908101604090815260008083526020808401829052600160a060020a033216825281905220815181556020820151600190910155505b5b6103448061005a6000396000f300606060405263ffffffff7c010000000000000000000000000000000000000000000000000000000060003504166334705f9981146100695780635a314c72146100ab5780636cdbe224146100e1578063e3cfaaff14610114578063f8b2cb4f14610156575b600080fd5b341561007457600080fd5b610097600160a060020a036004358116906024358116906044351660643561018d565b604051901515815260200160405180910390f35b34156100b657600080fd5b610097600160a060020a03600435166024356101f5565b604051901515815260200160405180910390f35b34156100ec57600080fd5b610097600160a060020a0360043516610239565b604051901515815260200160405180910390f35b341561011f57600080fd5b610097600160a060020a0360043581169060243581169060443516606435610281565b604051901515815260200160405180910390f35b341561016157600080fd5b610175600160a060020a03600435166102f2565b60405191825260208201526040908101905180910390f35b600080600a835b600160a060020a038088166000908152602081905260408082208054959094049485019093558782168152828120600181810180548a0190558154869003909155918a16815291909120810180548690039055925090505b50949350505050565b600060408051908101604090815260008083526020808401869052600160a060020a0387168252819052208151815560208201516001918201559150505b92915050565b60006040805190810160409081526001808352602080840191909152600160a060020a038516600090815290819052208151815560208201516001918201559150505b919050565b600080600a835b600160a060020a03878116600090815260208190526040808220805495909404808903909501909355878216815282812060018181018054600a88029081900390915582548701909255928b16825292902081018054909201909155925090505b50949350505050565b600160a060020a038116600090815260208190526040902080546001909101545b9150915600a165627a7a72305820dd1bdcc0f27bb10bdaa37a957ff17f157e5105716cf440bf98f42b6aa9f9244d0029",
+  "networks": {},
+  "schema_version": "0.0.5",
+  "updated_at": 1506712282050
+}
